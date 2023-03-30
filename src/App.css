@@ -1,0 +1,32 @@
+*{
+    margin-top: 0.1rem;
+    margin-left: 0.5rem;
+    color: rgba(0, 0, 0, 0.9);
+}
+
+.mainComponent{
+    display:  flex;
+    flex-direction: row;
+    gap: 10rem;
+    align-items: center;
+}
+.name{
+    padding: 0px;
+    margin: 0px;
+}
+.login{
+    padding: 0px;
+    margin: 0px;
+
+}
+.password{
+    padding: 0px;
+    margin: 0px;
+}
+.table{
+    padding: 4px;
+}
+.coloumn{
+    padding-right: 14rem;
+    margin: 2px;
+}
