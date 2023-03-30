@@ -1,11 +1,13 @@
 import useFetch from "./useFetch/useFetch"
 import './App.css';
 import useLocalStorage from "./useLocaStorage/useLocalStorage";
+import useGetLocalStorage from "./useLocaStorage/useGetLocalStorage/useGetLocalStorage";
 
 const App = () => {
   let result = useFetch('https://randomuser.me/api/?results=11')  // Fetching Data from Custom Hook
   result = result?.data?.results
-  useLocalStorage('shoaib' , result)     //LocalstorageHook
+  useLocalStorage('shoaib' , result)     //LocalstorageHook for storing in local storage.
+  const data = useGetLocalStorage('shoaib')  //Getting back items from local storage.
   return (
     <div>
       <h1> Rendering List Using Custom Hook</h1>
